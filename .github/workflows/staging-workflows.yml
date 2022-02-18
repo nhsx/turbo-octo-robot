@@ -1,0 +1,23 @@
+name: Tableau Workbook Action
+on:
+  pull_request:
+      branches:
+        - main
+uses: jayamanikharyono/tableau-workbook-action@v1.3
+jobs:
+  tableau-validation-action:
+    name: Tableau Workbook Staging Publisher
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'Tableau Workbook Action' #This workflows expected to be error since no secrets vars provided
+        uses: ./
+        env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          SITE_ID: ${{ secrets.SITE_ID }}
+          TABLEAU_URL: ${{ secrets.TABLEAU_URL }}
+        with:
+          workbook_dir: tests/workbooks
+          env: dev
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
