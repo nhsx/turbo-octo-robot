@@ -1,11 +1,8 @@
-- name: Tableau Workbook Action
-  uses: jayamanikharyono/tableau-workbook-action@v1.3
-
+name: Tableau Workbook Action
 on:
   pull_request:
       branches:
         - main
-uses: jayamanikharyono/tableau-workbook-action@v1.3
 jobs:
   tableau-validation-action:
     name: Tableau Workbook Staging Publisher
