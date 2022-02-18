@@ -7,3 +7,9 @@ with:
       TABLEAU_URL: "${{ secrets.TABLEAU_URL }}"
       USERNAME: "${{ secrets.USERNAME }}"
   repo_token: "${{ secrets.GITHUB_TOKEN }}"
+on:
+  pull_request:
+      branches:
+        - master
+      paths:
+        - 'tests/workbooks/**'
