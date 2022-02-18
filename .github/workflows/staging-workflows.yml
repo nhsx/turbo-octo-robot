@@ -2,11 +2,8 @@
   # You may pin to the exact commit or the version.
   # uses: jayamanikharyono/tableau-workbook-action@b3de92e2e75dd16947a89f53778e5f2d7acdaf2d
   uses: jayamanikharyono/tableau-workbook-action@v1.3
-  
   with:
-    # Path to you workbook directory
     workbook_dir: tests/workbooks
-    # Target environments
     env: 
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
