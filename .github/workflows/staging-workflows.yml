@@ -1,8 +1,8 @@
 - name: Tableau Workbook Action
   # You may pin to the exact commit or the version.
   # uses: jayamanikharyono/tableau-workbook-action@b3de92e2e75dd16947a89f53778e5f2d7acdaf2d
-  uses: jayamanikharyono/tableau-workbook-action@v1.3
-  with:
+uses: jayamanikharyono/tableau-workbook-action@v1.3
+with:
     workbook_dir: tests/workbooks
     env: 
           USERNAME: ${{ secrets.USERNAME }}
