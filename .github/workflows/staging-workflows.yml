@@ -1,17 +1,13 @@
-name: Tableau Workbook Action
-on:
-  pull_request:
-      branches:
-        - main
-jobs:
-  tableau-validation-action:
-    name: Tableau Workbook Staging Publisher
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: 'Tableau Workbook Action' #This workflows expected to be error since no secrets vars provided
-        uses: ./
-        env:
+- name: Tableau Workbook Action
+  # You may pin to the exact commit or the version.
+  # uses: jayamanikharyono/tableau-workbook-action@b3de92e2e75dd16947a89f53778e5f2d7acdaf2d
+  uses: jayamanikharyono/tableau-workbook-action@v1.3
+  
+  with:
+    # Path to you workbook directory
+    workbook_dir: tests/workbooks
+    # Target environments
+    env: 
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
           SITE_ID: ${{ secrets.SITE_ID }}
