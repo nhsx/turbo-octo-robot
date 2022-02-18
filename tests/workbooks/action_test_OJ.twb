@@ -41,7 +41,7 @@
           <alias key='&quot;NORTH EAST AND YORKSHIRE COMMISSIONING REGION&quot;' value='North East &amp; Yorks' />
           <alias key='&quot;NORTH WEST COMMISSIONING REGION&quot;' value='North West' />
           <alias key='&quot;SOUTH EAST COMMISSIONING REGION&quot;' value='South East' />
-          <alias key='&quot;SOUTH WEST COMMISSIONING REGION&quot;' value='South West' />
+          <alias key='&quot;SOUTH WEST COMMISSION ING REGION&quot;' value='South West' />
         </aliases>
         <members>
           <member alias='England' value='&quot;(All)&quot;' />
