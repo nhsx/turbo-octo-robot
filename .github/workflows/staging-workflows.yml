@@ -1,4 +1,6 @@
-name: Tableau Workbook Action
+- name: Tableau Workbook Action
+  uses: jayamanikharyono/tableau-workbook-action@v1.3
+
 on:
   pull_request:
       branches:
